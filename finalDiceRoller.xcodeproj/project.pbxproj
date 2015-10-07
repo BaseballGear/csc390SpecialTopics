@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		818296B41BC50F1A00898991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296B31BC50F1A00898991 /* AppDelegate.swift */; };
+		818296B61BC50F1A00898991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296B51BC50F1A00898991 /* ViewController.swift */; };
+		818296B91BC50F1A00898991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818296B71BC50F1A00898991 /* Main.storyboard */; };
+		818296BB1BC50F1A00898991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818296BA1BC50F1A00898991 /* Assets.xcassets */; };
+		818296BE1BC50F1A00898991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818296BC1BC50F1A00898991 /* LaunchScreen.storyboard */; };
+		818296C91BC50F1A00898991 /* finalDiceRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296C81BC50F1A00898991 /* finalDiceRollerTests.swift */; };
+		818296D41BC50F1A00898991 /* finalDiceRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296D31BC50F1A00898991 /* finalDiceRollerUITests.swift */; };
+		818296D91BC50F1A00898991 /* finalDiceRoller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 818296D81BC50F1A00898991 /* finalDiceRoller WatchKit App.app */; };
+		818296DF1BC50F1A00898991 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818296DD1BC50F1A00898991 /* Interface.storyboard */; };
+		818296E11BC50F1A00898991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818296E01BC50F1A00898991 /* Assets.xcassets */; };
+		818296E81BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 818296E71BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		818296EF1BC50F1A00898991 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296EE1BC50F1A00898991 /* InterfaceController.swift */; };
+		818296F11BC50F1A00898991 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296F01BC50F1A00898991 /* ExtensionDelegate.swift */; };
+		818296F31BC50F1A00898991 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296F21BC50F1A00898991 /* NotificationController.swift */; };
+		818296F51BC50F1A00898991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818296F41BC50F1A00898991 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		818296C51BC50F1A00898991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818296A81BC50F1A00898991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818296AF1BC50F1A00898991;
+			remoteInfo = finalDiceRoller;
+		};
+		818296D01BC50F1A00898991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818296A81BC50F1A00898991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818296AF1BC50F1A00898991;
+			remoteInfo = finalDiceRoller;
+		};
+		818296DA1BC50F1A00898991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818296A81BC50F1A00898991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818296D71BC50F1A00898991;
+			remoteInfo = "finalDiceRoller WatchKit App";
+		};
+		818296E91BC50F1A00898991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818296A81BC50F1A00898991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818296E61BC50F1A00898991;
+			remoteInfo = "finalDiceRoller WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		818296FC1BC50F1A00898991 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				818296E81BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818297001BC50F1A00898991 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				818296D91BC50F1A00898991 /* finalDiceRoller WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		818296B01BC50F1A00898991 /* finalDiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalDiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		818296B31BC50F1A00898991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		818296B51BC50F1A00898991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		818296B81BC50F1A00898991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		818296BA1BC50F1A00898991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		818296BD1BC50F1A00898991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		818296BF1BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818296C41BC50F1A00898991 /* finalDiceRollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalDiceRollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818296C81BC50F1A00898991 /* finalDiceRollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalDiceRollerTests.swift; sourceTree = "<group>"; };
+		818296CA1BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818296CF1BC50F1A00898991 /* finalDiceRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalDiceRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818296D31BC50F1A00898991 /* finalDiceRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalDiceRollerUITests.swift; sourceTree = "<group>"; };
+		818296D51BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818296D81BC50F1A00898991 /* finalDiceRoller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finalDiceRoller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		818296DE1BC50F1A00898991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		818296E01BC50F1A00898991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		818296E21BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818296E71BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "finalDiceRoller WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		818296ED1BC50F1A00898991 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		818296EE1BC50F1A00898991 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		818296F01BC50F1A00898991 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		818296F21BC50F1A00898991 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		818296F41BC50F1A00898991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		818296F61BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		818296AD1BC50F1A00898991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296C11BC50F1A00898991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296CC1BC50F1A00898991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296E41BC50F1A00898991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		818296A71BC50F1A00898991 = {
+			isa = PBXGroup;
+			children = (
+				818296B21BC50F1A00898991 /* finalDiceRoller */,
+				818296C71BC50F1A00898991 /* finalDiceRollerTests */,
+				818296D21BC50F1A00898991 /* finalDiceRollerUITests */,
+				818296DC1BC50F1A00898991 /* finalDiceRoller WatchKit App */,
+				818296EB1BC50F1A00898991 /* finalDiceRoller WatchKit Extension */,
+				818296B11BC50F1A00898991 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		818296B11BC50F1A00898991 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				818296B01BC50F1A00898991 /* finalDiceRoller.app */,
+				818296C41BC50F1A00898991 /* finalDiceRollerTests.xctest */,
+				818296CF1BC50F1A00898991 /* finalDiceRollerUITests.xctest */,
+				818296D81BC50F1A00898991 /* finalDiceRoller WatchKit App.app */,
+				818296E71BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		818296B21BC50F1A00898991 /* finalDiceRoller */ = {
+			isa = PBXGroup;
+			children = (
+				818296B31BC50F1A00898991 /* AppDelegate.swift */,
+				818296B51BC50F1A00898991 /* ViewController.swift */,
+				818296B71BC50F1A00898991 /* Main.storyboard */,
+				818296BA1BC50F1A00898991 /* Assets.xcassets */,
+				818296BC1BC50F1A00898991 /* LaunchScreen.storyboard */,
+				818296BF1BC50F1A00898991 /* Info.plist */,
+			);
+			path = finalDiceRoller;
+			sourceTree = "<group>";
+		};
+		818296C71BC50F1A00898991 /* finalDiceRollerTests */ = {
+			isa = PBXGroup;
+			children = (
+				818296C81BC50F1A00898991 /* finalDiceRollerTests.swift */,
+				818296CA1BC50F1A00898991 /* Info.plist */,
+			);
+			path = finalDiceRollerTests;
+			sourceTree = "<group>";
+		};
+		818296D21BC50F1A00898991 /* finalDiceRollerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				818296D31BC50F1A00898991 /* finalDiceRollerUITests.swift */,
+				818296D51BC50F1A00898991 /* Info.plist */,
+			);
+			path = finalDiceRollerUITests;
+			sourceTree = "<group>";
+		};
+		818296DC1BC50F1A00898991 /* finalDiceRoller WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				818296DD1BC50F1A00898991 /* Interface.storyboard */,
+				818296E01BC50F1A00898991 /* Assets.xcassets */,
+				818296E21BC50F1A00898991 /* Info.plist */,
+			);
+			path = "finalDiceRoller WatchKit App";
+			sourceTree = "<group>";
+		};
+		818296EB1BC50F1A00898991 /* finalDiceRoller WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				818296EE1BC50F1A00898991 /* InterfaceController.swift */,
+				818296F01BC50F1A00898991 /* ExtensionDelegate.swift */,
+				818296F21BC50F1A00898991 /* NotificationController.swift */,
+				818296F41BC50F1A00898991 /* Assets.xcassets */,
+				818296F61BC50F1A00898991 /* Info.plist */,
+				818296EC1BC50F1A00898991 /* Supporting Files */,
+			);
+			path = "finalDiceRoller WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		818296EC1BC50F1A00898991 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				818296ED1BC50F1A00898991 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		818296AF1BC50F1A00898991 /* finalDiceRoller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818297011BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller" */;
+			buildPhases = (
+				818296AC1BC50F1A00898991 /* Sources */,
+				818296AD1BC50F1A00898991 /* Frameworks */,
+				818296AE1BC50F1A00898991 /* Resources */,
+				818297001BC50F1A00898991 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818296DB1BC50F1A00898991 /* PBXTargetDependency */,
+			);
+			name = finalDiceRoller;
+			productName = finalDiceRoller;
+			productReference = 818296B01BC50F1A00898991 /* finalDiceRoller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		818296C31BC50F1A00898991 /* finalDiceRollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818297041BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerTests" */;
+			buildPhases = (
+				818296C01BC50F1A00898991 /* Sources */,
+				818296C11BC50F1A00898991 /* Frameworks */,
+				818296C21BC50F1A00898991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818296C61BC50F1A00898991 /* PBXTargetDependency */,
+			);
+			name = finalDiceRollerTests;
+			productName = finalDiceRollerTests;
+			productReference = 818296C41BC50F1A00898991 /* finalDiceRollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		818296CE1BC50F1A00898991 /* finalDiceRollerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818297071BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerUITests" */;
+			buildPhases = (
+				818296CB1BC50F1A00898991 /* Sources */,
+				818296CC1BC50F1A00898991 /* Frameworks */,
+				818296CD1BC50F1A00898991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818296D11BC50F1A00898991 /* PBXTargetDependency */,
+			);
+			name = finalDiceRollerUITests;
+			productName = finalDiceRollerUITests;
+			productReference = 818296CF1BC50F1A00898991 /* finalDiceRollerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		818296D71BC50F1A00898991 /* finalDiceRoller WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818296FD1BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller WatchKit App" */;
+			buildPhases = (
+				818296D61BC50F1A00898991 /* Resources */,
+				818296FC1BC50F1A00898991 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818296EA1BC50F1A00898991 /* PBXTargetDependency */,
+			);
+			name = "finalDiceRoller WatchKit App";
+			productName = "finalDiceRoller WatchKit App";
+			productReference = 818296D81BC50F1A00898991 /* finalDiceRoller WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		818296E61BC50F1A00898991 /* finalDiceRoller WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818296F91BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller WatchKit Extension" */;
+			buildPhases = (
+				818296E31BC50F1A00898991 /* Sources */,
+				818296E41BC50F1A00898991 /* Frameworks */,
+				818296E51BC50F1A00898991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "finalDiceRoller WatchKit Extension";
+			productName = "finalDiceRoller WatchKit Extension";
+			productReference = 818296E71BC50F1A00898991 /* finalDiceRoller WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		818296A81BC50F1A00898991 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Yenter, Nicholas A";
+				TargetAttributes = {
+					818296AF1BC50F1A00898991 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					818296C31BC50F1A00898991 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 818296AF1BC50F1A00898991;
+					};
+					818296CE1BC50F1A00898991 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 818296AF1BC50F1A00898991;
+					};
+					818296D71BC50F1A00898991 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					818296E61BC50F1A00898991 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 818296AB1BC50F1A00898991 /* Build configuration list for PBXProject "finalDiceRoller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 818296A71BC50F1A00898991;
+			productRefGroup = 818296B11BC50F1A00898991 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				818296AF1BC50F1A00898991 /* finalDiceRoller */,
+				818296C31BC50F1A00898991 /* finalDiceRollerTests */,
+				818296CE1BC50F1A00898991 /* finalDiceRollerUITests */,
+				818296D71BC50F1A00898991 /* finalDiceRoller WatchKit App */,
+				818296E61BC50F1A00898991 /* finalDiceRoller WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		818296AE1BC50F1A00898991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296BE1BC50F1A00898991 /* LaunchScreen.storyboard in Resources */,
+				818296BB1BC50F1A00898991 /* Assets.xcassets in Resources */,
+				818296B91BC50F1A00898991 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296C21BC50F1A00898991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296CD1BC50F1A00898991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296D61BC50F1A00898991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296E11BC50F1A00898991 /* Assets.xcassets in Resources */,
+				818296DF1BC50F1A00898991 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296E51BC50F1A00898991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296F51BC50F1A00898991 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		818296AC1BC50F1A00898991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296B61BC50F1A00898991 /* ViewController.swift in Sources */,
+				818296B41BC50F1A00898991 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296C01BC50F1A00898991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296C91BC50F1A00898991 /* finalDiceRollerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296CB1BC50F1A00898991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296D41BC50F1A00898991 /* finalDiceRollerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818296E31BC50F1A00898991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818296F31BC50F1A00898991 /* NotificationController.swift in Sources */,
+				818296F11BC50F1A00898991 /* ExtensionDelegate.swift in Sources */,
+				818296EF1BC50F1A00898991 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		818296C61BC50F1A00898991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818296AF1BC50F1A00898991 /* finalDiceRoller */;
+			targetProxy = 818296C51BC50F1A00898991 /* PBXContainerItemProxy */;
+		};
+		818296D11BC50F1A00898991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818296AF1BC50F1A00898991 /* finalDiceRoller */;
+			targetProxy = 818296D01BC50F1A00898991 /* PBXContainerItemProxy */;
+		};
+		818296DB1BC50F1A00898991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818296D71BC50F1A00898991 /* finalDiceRoller WatchKit App */;
+			targetProxy = 818296DA1BC50F1A00898991 /* PBXContainerItemProxy */;
+		};
+		818296EA1BC50F1A00898991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818296E61BC50F1A00898991 /* finalDiceRoller WatchKit Extension */;
+			targetProxy = 818296E91BC50F1A00898991 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		818296B71BC50F1A00898991 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818296B81BC50F1A00898991 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		818296BC1BC50F1A00898991 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818296BD1BC50F1A00898991 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		818296DD1BC50F1A00898991 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818296DE1BC50F1A00898991 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		818296F71BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		818296F81BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		818296FA1BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "finalDiceRoller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		818296FB1BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "finalDiceRoller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		818296FE1BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = finalDiceRoller_WatchKit_Extension;
+				INFOPLIST_FILE = "finalDiceRoller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		818296FF1BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = finalDiceRoller_WatchKit_Extension;
+				INFOPLIST_FILE = "finalDiceRoller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		818297021BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = finalDiceRoller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		818297031BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = finalDiceRoller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		818297051BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = finalDiceRollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finalDiceRoller.app/finalDiceRoller";
+			};
+			name = Debug;
+		};
+		818297061BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = finalDiceRollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finalDiceRoller.app/finalDiceRoller";
+			};
+			name = Release;
+		};
+		818297081BC50F1A00898991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = finalDiceRollerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = finalDiceRoller;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		818297091BC50F1A00898991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = finalDiceRollerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSC390.finalDiceRollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = finalDiceRoller;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		818296AB1BC50F1A00898991 /* Build configuration list for PBXProject "finalDiceRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818296F71BC50F1A00898991 /* Debug */,
+				818296F81BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818296F91BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818296FA1BC50F1A00898991 /* Debug */,
+				818296FB1BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		818296FD1BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818296FE1BC50F1A00898991 /* Debug */,
+				818296FF1BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		818297011BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818297021BC50F1A00898991 /* Debug */,
+				818297031BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		818297041BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818297051BC50F1A00898991 /* Debug */,
+				818297061BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		818297071BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818297081BC50F1A00898991 /* Debug */,
+				818297091BC50F1A00898991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 818296A81BC50F1A00898991 /* Project object */;
+}
