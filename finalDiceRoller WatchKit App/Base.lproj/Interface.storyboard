@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jY6-ee-ULv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--MainIC-->
+        <scene sceneID="PxO-UA-RA3">
+            <objects>
+                <controller hidesWhenLoading="NO" id="jY6-ee-ULv" customClass="MainIC" customModule="finalDiceRoller_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="148" alignment="left" layout="vertical" id="bPY-rr-BsW">
+                            <items>
+                                <button width="1" alignment="left" title="Roll" id="F6D-SZ-vN4">
+                                    <color key="backgroundColor" red="0.2261123431" green="0.58268229169999997" blue="0.18381849950000001" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="rollDice" destination="jY6-ee-ULv" id="zCb-Pw-VD1"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Add Die" id="bHo-kb-NeX">
+                                    <color key="backgroundColor" red="0.573922822" green="0.050727122809999997" blue="0.029763706170000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="creatingNewDieRoll" destination="jY6-ee-ULv" id="wA5-fS-jjc"/>
+                                    </connections>
+                                </button>
+                                <table alignment="left" id="7wT-2a-YKy">
+                                    <items>
+                                        <tableRow id="t6G-XS-iHF">
+                                            <group key="rootItem" width="1" alignment="left" id="8tj-ms-o6t">
+                                                <items>
+                                                    <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="3yM-6M-JAs"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-23" y="347"/>
+        </scene>
+        <!--dieSelector-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="dieSelector" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="finalDiceRoller_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="148" alignment="left" id="KxW-8l-bJF">
+                            <items>
+                                <table alignment="center" id="1ov-hR-C2h">
+                                    <items>
+                                        <tableRow identifier="cell" id="vAq-73-6Rr" customClass="diceRow" customModule="finalDiceRoller_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="37.5" alignment="left" id="V47-dY-sfu">
+                                                <items>
+                                                    <imageView width="0.33000000000000002" height="100" alignment="left" verticalAlignment="center" id="x0G-lL-giW"/>
+                                                    <label width="0.66000000000000003" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="idV-Bq-ITJ"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="theImage" destination="x0G-lL-giW" id="3DN-nW-V2w"/>
+                                                <outlet property="theLabel" destination="idV-Bq-ITJ" id="sag-TF-pW0"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="theTable" destination="1ov-hR-C2h" id="aAn-f5-Rej"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="200" y="347"/>
+        </scene>
+        <!--numRolls-->
+        <scene sceneID="WrE-9z-XyB">
+            <objects>
+                <controller identifier="numRolls" hidesWhenLoading="NO" id="3FJ-LT-SZz" customClass="numRollsSelector" customModule="finalDiceRoller_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="105" alignment="left" layout="vertical" id="MmE-K9-2fd">
+                            <items>
+                                <picker width="1" height="145" alignment="left" id="nEd-vM-P9t">
+                                    <connections>
+                                        <action selector="rollSelected:" destination="3FJ-LT-SZz" id="rn1-Uo-AaE"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Num Rolls Selected" id="CaR-gz-2mq">
+                            <color key="backgroundColor" red="0.2261123431" green="0.58268229169999997" blue="0.18381849950000001" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="numRollsSelectedButton" destination="3FJ-LT-SZz" id="vZS-XX-k1J"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="theRoll" destination="nEd-vM-P9t" id="mQo-Hc-zjR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="383" y="347"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +122,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="finalDiceRoller_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

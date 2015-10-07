@@ -22,6 +22,17 @@
 		818296F11BC50F1A00898991 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296F01BC50F1A00898991 /* ExtensionDelegate.swift */; };
 		818296F31BC50F1A00898991 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296F21BC50F1A00898991 /* NotificationController.swift */; };
 		818296F51BC50F1A00898991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818296F41BC50F1A00898991 /* Assets.xcassets */; };
+		8182970B1BC50FCA00898991 /* diceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182970A1BC50FCA00898991 /* diceRow.swift */; settings = {ASSET_TAGS = (); }; };
+		818297141BC5106900898991 /* d4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8182970D1BC5106900898991 /* d4.jpg */; settings = {ASSET_TAGS = (); }; };
+		818297151BC5106900898991 /* d6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8182970E1BC5106900898991 /* d6.jpg */; settings = {ASSET_TAGS = (); }; };
+		818297161BC5106900898991 /* d8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8182970F1BC5106900898991 /* d8.jpg */; settings = {ASSET_TAGS = (); }; };
+		818297171BC5106900898991 /* d10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 818297101BC5106900898991 /* d10.jpg */; settings = {ASSET_TAGS = (); }; };
+		818297181BC5106900898991 /* d12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 818297111BC5106900898991 /* d12.jpg */; settings = {ASSET_TAGS = (); }; };
+		818297191BC5106900898991 /* d20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 818297121BC5106900898991 /* d20.jpg */; settings = {ASSET_TAGS = (); }; };
+		8182971A1BC5106900898991 /* d100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 818297131BC5106900898991 /* d100.jpg */; settings = {ASSET_TAGS = (); }; };
+		8182971C1BC5124E00898991 /* numRollsSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182971B1BC5124E00898991 /* numRollsSelector.swift */; settings = {ASSET_TAGS = (); }; };
+		8182971E1BC519A500898991 /* diceRollerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182971D1BC519A500898991 /* diceRollerCore.swift */; settings = {ASSET_TAGS = (); }; };
+		818297201BC5200900898991 /* MainIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182971F1BC5200900898991 /* MainIC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +116,17 @@
 		818296F21BC50F1A00898991 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		818296F41BC50F1A00898991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818296F61BC50F1A00898991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8182970A1BC50FCA00898991 /* diceRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diceRow.swift; sourceTree = "<group>"; };
+		8182970D1BC5106900898991 /* d4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d4.jpg; sourceTree = "<group>"; };
+		8182970E1BC5106900898991 /* d6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d6.jpg; sourceTree = "<group>"; };
+		8182970F1BC5106900898991 /* d8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d8.jpg; sourceTree = "<group>"; };
+		818297101BC5106900898991 /* d10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d10.jpg; sourceTree = "<group>"; };
+		818297111BC5106900898991 /* d12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d12.jpg; sourceTree = "<group>"; };
+		818297121BC5106900898991 /* d20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d20.jpg; sourceTree = "<group>"; };
+		818297131BC5106900898991 /* d100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d100.jpg; sourceTree = "<group>"; };
+		8182971B1BC5124E00898991 /* numRollsSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numRollsSelector.swift; sourceTree = "<group>"; };
+		8182971D1BC519A500898991 /* diceRollerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diceRollerCore.swift; sourceTree = "<group>"; };
+		8182971F1BC5200900898991 /* MainIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +219,7 @@
 		818296DC1BC50F1A00898991 /* finalDiceRoller WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				8182970C1BC5105900898991 /* Images */,
 				818296DD1BC50F1A00898991 /* Interface.storyboard */,
 				818296E01BC50F1A00898991 /* Assets.xcassets */,
 				818296E21BC50F1A00898991 /* Info.plist */,
@@ -213,6 +236,10 @@
 				818296F41BC50F1A00898991 /* Assets.xcassets */,
 				818296F61BC50F1A00898991 /* Info.plist */,
 				818296EC1BC50F1A00898991 /* Supporting Files */,
+				8182970A1BC50FCA00898991 /* diceRow.swift */,
+				8182971B1BC5124E00898991 /* numRollsSelector.swift */,
+				8182971D1BC519A500898991 /* diceRollerCore.swift */,
+				8182971F1BC5200900898991 /* MainIC.swift */,
 			);
 			path = "finalDiceRoller WatchKit Extension";
 			sourceTree = "<group>";
@@ -223,6 +250,20 @@
 				818296ED1BC50F1A00898991 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8182970C1BC5105900898991 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8182970D1BC5106900898991 /* d4.jpg */,
+				8182970E1BC5106900898991 /* d6.jpg */,
+				8182970F1BC5106900898991 /* d8.jpg */,
+				818297101BC5106900898991 /* d10.jpg */,
+				818297111BC5106900898991 /* d12.jpg */,
+				818297121BC5106900898991 /* d20.jpg */,
+				818297131BC5106900898991 /* d100.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,8 +437,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818297161BC5106900898991 /* d8.jpg in Resources */,
+				818297141BC5106900898991 /* d4.jpg in Resources */,
 				818296E11BC50F1A00898991 /* Assets.xcassets in Resources */,
+				818297171BC5106900898991 /* d10.jpg in Resources */,
+				8182971A1BC5106900898991 /* d100.jpg in Resources */,
+				818297191BC5106900898991 /* d20.jpg in Resources */,
 				818296DF1BC50F1A00898991 /* Interface.storyboard in Resources */,
+				818297151BC5106900898991 /* d6.jpg in Resources */,
+				818297181BC5106900898991 /* d12.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +490,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				818296F31BC50F1A00898991 /* NotificationController.swift in Sources */,
+				8182971E1BC519A500898991 /* diceRollerCore.swift in Sources */,
+				818297201BC5200900898991 /* MainIC.swift in Sources */,
+				8182970B1BC50FCA00898991 /* diceRow.swift in Sources */,
 				818296F11BC50F1A00898991 /* ExtensionDelegate.swift in Sources */,
+				8182971C1BC5124E00898991 /* numRollsSelector.swift in Sources */,
 				818296EF1BC50F1A00898991 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
