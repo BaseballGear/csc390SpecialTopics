@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8124031D1BCC1AB2003742E7 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124031C1BCC1AB2003742E7 /* Roll.swift */; settings = {ASSET_TAGS = (); }; };
+		8124031F1BCC2DFB003742E7 /* tableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124031E1BCC2DFB003742E7 /* tableRow.swift */; settings = {ASSET_TAGS = (); }; };
 		818296B41BC50F1A00898991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296B31BC50F1A00898991 /* AppDelegate.swift */; };
 		818296B61BC50F1A00898991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818296B51BC50F1A00898991 /* ViewController.swift */; };
 		818296B91BC50F1A00898991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818296B71BC50F1A00898991 /* Main.storyboard */; };
@@ -92,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8124031C1BCC1AB2003742E7 /* Roll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
+		8124031E1BCC2DFB003742E7 /* tableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableRow.swift; sourceTree = "<group>"; };
 		818296B01BC50F1A00898991 /* finalDiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalDiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818296B31BC50F1A00898991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818296B51BC50F1A00898991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 				8182971B1BC5124E00898991 /* numRollsSelector.swift */,
 				8182971D1BC519A500898991 /* diceRollerCore.swift */,
 				8182971F1BC5200900898991 /* MainIC.swift */,
+				8124031C1BCC1AB2003742E7 /* Roll.swift */,
+				8124031E1BCC2DFB003742E7 /* tableRow.swift */,
 			);
 			path = "finalDiceRoller WatchKit Extension";
 			sourceTree = "<group>";
@@ -490,11 +496,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				818296F31BC50F1A00898991 /* NotificationController.swift in Sources */,
+				8124031F1BCC2DFB003742E7 /* tableRow.swift in Sources */,
 				8182971E1BC519A500898991 /* diceRollerCore.swift in Sources */,
 				818297201BC5200900898991 /* MainIC.swift in Sources */,
 				8182970B1BC50FCA00898991 /* diceRow.swift in Sources */,
 				818296F11BC50F1A00898991 /* ExtensionDelegate.swift in Sources */,
 				8182971C1BC5124E00898991 /* numRollsSelector.swift in Sources */,
+				8124031D1BCC1AB2003742E7 /* Roll.swift in Sources */,
 				818296EF1BC50F1A00898991 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,6 +792,7 @@
 				818296FB1BC50F1A00898991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818296FD1BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -792,6 +801,7 @@
 				818296FF1BC50F1A00898991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818297011BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRoller" */ = {
 			isa = XCConfigurationList;
@@ -800,6 +810,7 @@
 				818297031BC50F1A00898991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818297041BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerTests" */ = {
 			isa = XCConfigurationList;
@@ -808,6 +819,7 @@
 				818297061BC50F1A00898991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818297071BC50F1A00898991 /* Build configuration list for PBXNativeTarget "finalDiceRollerUITests" */ = {
 			isa = XCConfigurationList;
@@ -816,6 +828,7 @@
 				818297091BC50F1A00898991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

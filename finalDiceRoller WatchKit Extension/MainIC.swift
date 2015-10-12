@@ -18,6 +18,19 @@ class MainIC: WKInterfaceController
     {
         super.awakeWithContext(context)
         
+        let prefs = NSUserDefaults.standardUserDefaults()
+        let currCount = prefs.valueForKey("count")
+        
+        print(currCount)
+        
+        if(currCount != nil)
+        {
+            prefs.setInteger((currCount! as! Int + 1), forKey: "count")
+        }
+        else
+        {
+            prefs.setInteger(0, forKey: "count")
+        }
         // Configure interface objects here.
     }
 
@@ -63,16 +76,30 @@ class MainIC: WKInterfaceController
         self.pushControllerWithName("dieSelector", context: "Pick a die")
     }
 
+    @IBOutlet var theRoll: WKInterfacePicker!
+    func generateTable()
+    {
+        self.theTable.setNumberOfRows(diceRollerCore.theRolls.count, withRowType: "cell")
+        
+        for(var i = 0; i < diceRollerCore.theRolls.count; i++)
+        {
+            let currRow = self.theRoll.rowControllerAtIndx(i) as! tableRow
+            currRow.qtyLabel.setText("\(diceRollerCore.theRolls[i].qty)")
+            currRow.qtyLabel.setText("D\(diceRollerCore.theRolls[i].numSides)")
+        }
+    }
     override func willActivate()
     {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        if(diceRollerCore.numSides != -1)
+        if(diceRollerCore.hasDice)
         {
-            //Able to do stuff
-            print("Num Sides: \(diceRollerCore.numSides)")
-            print("Num Dice: \(diceRollerCore.numDice)")
+            diceRollerCore.theRolls.append(Roll(qty: diceRollerCore.numDice, rollSides: diceRollerCore.numSides))
+            diceRollerCore.resetValues()
+            
+            self.generateTable()
         }
+        
     }
 
     override func didDeactivate() {

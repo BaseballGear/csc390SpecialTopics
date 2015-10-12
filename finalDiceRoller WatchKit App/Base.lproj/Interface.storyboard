@@ -26,12 +26,17 @@
                                 </button>
                                 <table alignment="left" id="7wT-2a-YKy">
                                     <items>
-                                        <tableRow id="t6G-XS-iHF">
+                                        <tableRow id="t6G-XS-iHF" customClass="tableRow" customModule="finalDiceRoller_WatchKit_Extension">
                                             <group key="rootItem" width="1" alignment="left" id="8tj-ms-o6t">
                                                 <items>
-                                                    <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="3yM-6M-JAs"/>
+                                                    <label width="0.5" alignment="left" verticalAlignment="center" text="Label" id="wG9-ac-JEP"/>
+                                                    <label width="0.5" alignment="right" verticalAlignment="center" text="Label" id="8im-8h-PeJ"/>
                                                 </items>
                                             </group>
+                                            <connections>
+                                                <outlet property="qtyLabel" destination="wG9-ac-JEP" id="xwJ-Ad-6LZ"/>
+                                                <outlet property="sidesLabel" destination="8im-8h-PeJ" id="u6h-FS-6fk"/>
+                                            </connections>
                                         </tableRow>
                                     </items>
                                 </table>

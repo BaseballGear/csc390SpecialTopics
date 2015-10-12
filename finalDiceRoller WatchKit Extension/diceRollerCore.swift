@@ -10,6 +10,17 @@ import WatchKit
 
 class diceRollerCore: NSObject
 {
-    static var numSides = -1
-    static var numDice = -1
+    static var numSides = 0
+    static var numDice = 1
+    
+    static var theRolls = [Roll]()
+    static var hasDice = false
+    
+    static func resetValues()
+    {
+        numSides = 0
+        numDice = 1
+        hasDice = false
+    }
+    
 }
